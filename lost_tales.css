@@ -1,0 +1,282 @@
+/*----------------------*\
+           HTML
+\*----------------------*/
+
+body {
+  background-color: #EEDDBB;
+  background-image: url(images/parchment_tile_bg.jpg);
+  font-family: "Times New Roman", "Georgia", serif;
+  font-size: 1.1em;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+#body-inner {
+  margin: 0;
+  padding: 1em 0;
+  width: 100%;
+  height: auto;
+  background-image: url(images/arcane_bookshelf.jpg), url(images/arcane_bookshelf.jpg);
+  background-size: 10%, 10%;
+  background-position: left top, right top;
+  background-repeat: repeat-y, repeat-y;
+}
+
+div { margin: 0; padding: 0; }
+
+a:link { color: #007700; text-decoration: none;}
+a:visited { color: #007700; }
+a:hover { color: #009900; }
+a:active { color: #007700; }
+
+h2 {
+  font-size: 170%;
+  font-weight: normal;
+  font-style: italic;
+  color: #000;
+  margin: 0.5em;
+}
+h3 {
+  font-size: 150%;
+  font-weight: normal;
+  font-style: italic;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+h4 {
+  font-size: 130%
+  font-weight: normal;
+  font-style: italic;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+blockquote {
+  text-align: justify;
+  margin-right: 4em;
+}
+
+hr {
+  color: rgba(0,119,0,1.0);
+  border-width: 3px;
+  border-style: double;
+  border-radius: 5px;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+dt {
+  font-size: 110%;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+dd {
+  margin: .3em 2em;
+}
+
+/*----------------------*\
+      HEADERS/FOOTERS
+\*----------------------*/
+
+#page-header {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+#page-footer {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+#bannerindex {
+  display: block;
+  width: 700px;
+  height: 103px;
+  margin: 0 auto;
+  padding: 0 0 1em 0;
+}
+
+#banner {
+  display: block;
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 0 1em 0;
+}
+
+#page-title {
+  font-size: 200%;
+  font-weight: normal;
+  font-style: italic;
+  color: #070;
+  text-shadow: 2px 2px 4px rgba(0,119,0,0.30);
+  margin-top: 0.5em;
+}
+
+#page-subtitle {
+  font-size: 180%;
+  font-weight: normal;
+  font-style: italic;
+  color: #070;
+  text-shadow: 2px 2px 4px rgba(0,119,0,0.30);
+}
+
+/*----------------------*\
+          CONTENT
+\*----------------------*/
+
+.box {
+  padding: 0.5em;
+  margin: 0 auto;
+  width: 75%;
+  text-align: left;
+}
+
+.box-header {
+  margin: 0;
+  padding: 0;
+}
+
+.box-content {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+.box-footer {
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 90%;
+}
+
+#back-button {
+  float: left;
+  width: 101px;
+  height: 33px;
+  margin: 0;
+  padding: 25px 0 25px 10%;
+}
+
+#next-button {
+  float: right;
+  width: 101px;
+  height: 33px;
+  margin: 0;
+  padding: 25px 10% 25px 0;
+}
+
+#home-button {
+  width: 139px;
+  height: 95px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+}
+
+.divider01 {
+  display: block;
+  width: 388px;
+  height: 36px;
+  margin: 0 auto;
+  padding: 0.5em 0;
+}
+
+.divider02 {
+  display: block;
+  width: 50px;
+  height: 49px;
+  margin: 0 auto;
+  padding: 0.5em 0;
+}
+
+img#tos {
+  display: block;
+  width: 430px;
+  height: 614px;
+  margin: 0 auto;
+}
+
+img#shelfmap {
+  display: block;
+  width: 631px;
+  height: 339px;
+  margin: 0 auto;
+}
+
+img.frame {
+  margin: 10px 0 10px 20px;
+  border: #000000 double 5px;
+  float: right;
+}
+
+table.sortable {
+  margin: 0.5em 0;
+  padding: 0;
+  width: 100%;
+  font-size: inherit;
+}
+table.sortable th {
+  text-align: left;
+  font-size: 115%;
+  font-weight: bold;
+  color: #070;
+  padding: 0;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25BE" 
+}
+table.sortable td {
+   vertical-align: top;
+   padding: 5px;
+}
+table.sortable tbody td:first-child {  
+  font-style: italic;
+  font-weight: bold;
+}
+table.sortable tbody tr:nth-child(2n) td {
+  background: rgba(255,255,255,.15);
+}
+table.sortable tbody tr:nth-child(2n+1) td {
+  background: rgba(255,255,255,.30);
+}
+
+table.unsortable {
+  margin: 0.5em 0;
+  padding: 0;
+  width: 100%;
+  font-size: inherit;
+}
+table.unsortable th {
+  text-align: left;
+  font-size: 115%;
+  font-weight: bold;
+  color: #070;
+  padding: 0;
+}
+table.unsortable td {
+   vertical-align: top;
+   padding: 5px;
+}
+table.unsortable tbody td:first-child {  
+  font-style: italic;
+  font-weight: bold;
+}
+table.unsortable tbody tr:nth-child(even) td {
+  background: rgba(255,255,255,.30);
+}
+table.unsortable tbody tr:nth-child(odd) td {
+  background: rgba(255,255,255,.15);
+}
