@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i -E -e 's/divider02.gif/divider01.gif/g' -e 's/dividerround.gif/divider02.gif/g' "$@"

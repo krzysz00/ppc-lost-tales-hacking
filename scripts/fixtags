@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i -E -e 's/<\/?([A-Z]+)([^>]*)>/<\L\1\E\2>/g' -e 's/(NAME|CONTENT|HTTP-EQUIV)="([^"]*)"/\L\1\E="\2"/g' -e 's/<(hr|br)>/<\1\/>/g' "$@"
