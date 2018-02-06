@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i -E -e 's/<title>(.*), Mission ([0-9]+) - "([^"]*)"(.*)/<title>\2. "\3" by \1\4/' -e 's/<title>(.*)<title>/<title>\1<\/title>/g' "$@"
