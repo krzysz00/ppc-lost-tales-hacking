@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i -E -e 's/\[spinoff\]/'"$1"'/' -e 's/\[authors\]/'"$2"'/' "${@:3:99}"
