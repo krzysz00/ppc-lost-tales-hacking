@@ -1,0 +1,16 @@
+#!/bin/bash
+sed -i -E -e 's/<body[^>]*>/<body>\n<div id="body-inner">/' \
+    -e '/<center><a[^<]*<img.*/{N;N;
+c <header id="page-header">\n<a href="http://plotprotectors.tripod.com/"><img id="banner" src="http://plotprotectors.tripod.com/images/losttalesbanner.png" alt="Back to Lost Tales home." title="Back to Lost Tales home."/></a>\n<img class="divider01" src="http://plotprotectors.tripod.com/images/divider01.gif"/>\n<div id="page-title">[spinoff]</div>\n<div id="page-subtitle">by [authors]</div>\n</header>
+}' \
+    -e 's/<p><center><i><font.*span.*>(.*)<\/span><\/font>.*/<div class="box">\n<div class="box-header"><h2>[number]. \1<\/h2><\/div>\n<div class="box-content">/' \
+    -e '/back_button.gif/i </div><div class="box-footer">' \
+    -e 's/<div style="text-align: left; width: 50%; float: left;"/<div id="back-button"/' \
+    -e 's/<div style="text-align: right; width: 50%; float: left;"/<div id="next-button"/' \
+    -e 's/<div style="text-align: center;"/<div id="home-button"/' \
+    -e '/"TOS Home"\/><\/a><\/div>/a </div>\n</div>' \
+    -e '/<\/td><\/tr><\/table><br\/>/{N;
+c <footer id="page-footer">\n<img class="divider01" src="http://plotprotectors.tripod.com/images/divider01.gif"/>\n<p><i>The Protectors of the Plot Continuum</i> was created by Jay and Acacia. The works archived here belong to their authors. The Celtic knot dividers and buttons are freeware from <a href="http://www.aon-celtic.com/free/cfreewarecliparts.html">Aon Celtic Art</a>. Various free stock images are used with permission from artists at deviantART.com.</p>\n<p><i>PPC: The Lost Tales</i> is the brainchild of Neshomeh and the work of Neshomeh and helpers, including at various times Twiggy, Hushpiper, Tawaki, Irish Samurai, Hieronymus Graubart, and Omega.</p>\n</footer>\n</div>
+}' \
+    -e 's/<(\/)?(center|table|tr|td)[^>]*>//g' \
+"$@"
