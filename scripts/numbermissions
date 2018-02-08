@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in $1*.html
+do
+sed -i -E -e 's/\[number\]/'`tr -cd [:digit:] <<<$i`'/' $i
+done
