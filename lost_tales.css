@@ -99,16 +99,16 @@ dd {
 
 #bannerindex {
   display: block;
-  width: 700px;
-  height: 103px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 0 0 1em 0;
 }
 
 #banner {
   display: block;
-  width: 1000px;
-  height: 50px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 0 0 1em 0;
 }
@@ -188,24 +188,24 @@ dd {
 
 .divider01 {
   display: block;
-  width: 388px;
-  height: 36px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 0.5em 0;
 }
 
 .divider02 {
   display: block;
-  width: 50px;
-  height: 49px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 0.5em 0;
 }
 
 img#tos {
   display: block;
-  width: 430px;
-  height: 614px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
